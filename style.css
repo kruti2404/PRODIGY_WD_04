@@ -1,0 +1,548 @@
+body {
+  margin: 0;
+  padding-top: 60px;
+  color: white;
+  background-color: black;
+  font-family: "Tinos", sans-serif;
+  font-variant: small-caps;
+}
+
+.head {
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#headNav img{
+  width: 40%;
+  height: 30%;
+  font-weight: bolder;
+ 
+
+}
+
+.nav {
+  display: flex;
+  font-size: 1rem;
+  justify-content: flex-end;
+  margin-right: 0;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+
+.nav li {
+  padding: 0 1rem;
+}
+.nav li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+
+.nav li a:hover {
+  /* font-size: 2.2rem; */
+  color: #318ce7;
+}
+
+.menu-icon {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.menu-icon ion-icon {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 852px) {
+  .nav {
+    background-color: rgb(38, 36, 36);
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+    right: 0;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav li {
+    margin: 0;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  #menu-icon {
+    display: flex;
+    font-size: 3rem;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .grid,
+  .grid2,
+  .grid3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 2rem;
+    padding: 1rem;
+  }
+
+  .Diff #name {
+    display: flex;
+    justify-content: center;
+  }
+
+  .getInTouch {
+    grid-template-rows: repeat(6, 1fr);
+    align-items: start;
+    justify-content: left;
+    margin-left: 15rem;
+  }
+
+  .getInTouch span {
+    flex-direction: column;
+  }
+  .getInTouch span ion-icon:hover {
+    background-color: #318ce7;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 766px) {
+  #menu-icon {
+    display: none;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .Diff #name {
+    margin: 0 40% 0 40%;
+  }
+  .grid3 {
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .getInTouch {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin-left: 200px;
+    justify-items: center;
+    justify-content: center;
+  }
+  .getInTouch span {
+    flex-direction: row;
+  }
+}
+
+.grid {
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+}
+
+.content-home h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.content-home h1 {
+  font-size: 6rem;
+  font-variant: normal;
+  margin: 1.5rem 0; /* Adjust margin */
+  color: #318ce7;
+}
+
+.content-home h4 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.content-home p {
+  font-size: 1.3rem;
+  margin: 2.3rem;
+}
+
+#homeImag img {
+  box-shadow: 10px 10px 5px #318ce7, 10px 10px 5px #318ce7;
+  max-width: 60%; 
+  height: auto;
+  margin: 0 auto; 
+  border-radius: 50%; 
+}
+div img:hover{
+  max-width: 63%; 
+
+}
+
+.pageHeading {
+  font-size: 3.5rem;
+  margin: 5rem 0 0.5rem 10rem;
+  font-weight: bold;
+  color: #318ce7;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.grid2 {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 7rem;
+}
+
+.into {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.Diff h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.Diff #name {
+  font-size: 3rem;
+  color: #318ce7;
+}
+
+.into p {
+  font-size: 1.7rem;
+  margin: 3rem;
+}
+
+.about-me {
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.grid2 .about-me p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid2 .about-me p span {
+  font-size: 1.7rem;
+  margin: 2.2rem;
+}
+
+.grid2 .about-me p ion-icon {
+  color: #318ce7;
+  margin-right: 1rem;
+}
+
+.grid3 {
+  display: grid;
+}
+
+.technicalSkills {
+  margin: 0px 0px 20px 30px;
+  list-style: none;
+  padding-left: 3rem;
+  width: 700px;
+  height: 530px;
+  border: 1px solid #888888;
+  border-radius: 20px;
+  box-shadow: 8px 8px 8px #888888;
+}
+
+.bar {
+  margin-right: 20px;
+  display: block;
+  height: 15px;
+  border: 1px solid #318ce7;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 1px 3px #318ce7;
+}
+
+.bar span {
+  float: left;
+  height: 20px;
+  background: #318ce7;
+}
+
+.html {
+  width: 90%;
+  animation: html 3s;
+}
+
+.js {
+  width: 70%;
+  animation: js 3s;
+}
+
+.css {
+  width: 68%;
+  animation: css 3s;
+}
+
+.java {
+  width: 70%;
+  animation: java 3s;
+}
+
+.sql {
+  width: 50%;
+  animation: sql 3s;
+}
+
+.react {
+  width: 50%;
+  animation: react 3s;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 68%;
+  }
+}
+
+@keyframes java {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+.softSkills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  height: 85%;
+  padding: 1rem;
+  margin: 0;
+  background-color: black;
+  color: white;
+  border: 1px solid #888888;
+  border-radius: 20px;
+  box-shadow: 8px 8px 8px #888888;
+}
+
+.softSkills h2 {
+  font-size: 2rem;
+  color: #318ce7;
+  margin-bottom: 1rem;
+}
+
+.softSkills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.softSkills li {
+  margin: 0.5rem 0;
+}
+
+.softSkills h3 {
+  font-size: 1.rem;
+  color: white;
+  margin: 0;
+}
+
+.softSkills .resume {
+  font-size: 1.rem;
+  background-color: #318ce7;
+  color: black;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px #318ce7;
+}
+
+.softSkills .resume:hover {
+  background-color: white;
+  color: #318ce7;
+  box-shadow: 3px 3px 10px white;
+}
+
+/* Ensuring the resume button stands out */
+button.resume {
+  align-self: center;
+  margin-top: 2rem;
+}
+
+#contactme h1{
+  font-size: 5rem;
+  text-align: center;
+  margin: 2rem 10rem 1rem 0;
+
+  color: #318ce7;
+  font-weight: bolder;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.Form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactMeForm {
+  box-shadow: 5px 5px 10px #888888;
+  border: 1px solid #888888;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 700px;
+  height: auto;
+  align-items: center;
+}
+.contactMeForm span{
+  justify-content: space-between;
+  margin: 2rem 0 2rem 0;
+}
+.inputBox{
+  background-color: black;
+  border: 1px solid #318ce7;
+  border-radius: 0.5rem;
+  padding: 0 0.5rem 0 0.5rem;
+
+  width: 45%;
+  height: 2rem;
+  font-size: 1.3rem;
+}
+#inputMail{
+  margin-left: 1rem;
+}
+.inputBoxofmsg{
+  background-color: black;
+  border: 1px solid #318ce7;
+  border-radius: 0.5rem;
+  width: 79%;
+  padding: 0 0.5rem 0 0.5rem;
+  height: 2rem;
+  font-size: 1.3rem;
+  margin: 0 2rem 0 2rem;
+}
+#submitbtn{
+  margin: 2rem;
+  font-size: 2rem;
+  background-color: black;
+  border: 2px solid #318ce7;
+  color: #318ce7;
+  box-shadow: 3px 3px 10px #318ce7;
+
+  border-radius: 1rem;padding: 0.5rem;
+  align-items: center;
+  width: fit-content;
+}
+#submitbtn:hover{
+  background-color: #318ce7;
+  border: 2px solid black;
+  color: black;
+}
+.letsGetSocialize{
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+  color: #318ce7;
+  font-weight: bolder;
+  font-family: 'Courier New', Courier, monospace;
+}
+.getInTouch {
+  width: 900px;
+  display: grid;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.getInTouch span {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.getInTouch span ion-icon {
+  font-size: 3.5rem;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  color: #318ce7;
+  margin: 1rem;
+}
+
+.getInTouch span ion-icon:hover {
+  background-color: #318ce7;
+  color: black;
+}
+
+.getInTouch span a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-variant: normal;
+}
